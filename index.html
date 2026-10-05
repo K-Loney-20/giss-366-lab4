@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>[update this Title] My Map</title>
+        <title>Basic San Juan College Map</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
@@ -25,8 +25,8 @@
                 font-family: "Lora", serif;
                 letter-spacing: .04em;
                 padding: 10px 15px;
-                background-color: rgba(255, 255, 255, 0.5);
-                border: 1px solid grey;
+                background-color: rgba(240, 240, 100, 0.5);
+                border: 1px solid black;
                 border-radius: 3px;
                 z-index: 800;
             }
@@ -42,12 +42,12 @@
             }
             #description {
                 position: fixed;
-                bottom: 20px;
+                top: 100px;
                 left: 10px;
                 width: 280px;
                 padding: 0px 15px;
-                background-color: rgba(255, 255, 255, 0.7);
-                border: 1px solid grey;
+                background-color: rgba(240, 240, 100, 0.7);
+                border: 1px solid black;
                 border-radius: 3px;
                 z-index: 800;
             }
@@ -65,14 +65,15 @@
         </style>
     </head>
     <body>
-        <h1 id="title">[update this] My Map</h1>
+        <h1 id="title">Basic San Juan College Map</h1>
         <div id="map"></div>
         <div id="description">
-            <h2>[update this] About this map</h2>
-            <p>[update this with your text]</p>
-            <p>[update this with your layers list]</p>
-            <p>Map authored by: [insert your name here]</p>
+            <h2>About</h2>
+            <p>Map made to practice using JavaScript</p>
+            <p>The layers shown are of San Juan College and Piñon Hills Boulevard.</p>
+            <p>Map authored by: Kevin Loney</p>
         </div>
+        <script src="https://unpkg.com/leaflet-providers/leaflet-providers.js"></script>
         <script src="map.js"></script>
     </body>
 </html>
